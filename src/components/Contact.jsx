@@ -6,11 +6,11 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const [status, setStatus] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
+      setStatus(true);
       await emailjs.send(
         "service_eclnwwi", // Replace with your EmailJS service ID
         "template_qqza3bf", // Replace with your EmailJS template ID
@@ -24,6 +24,7 @@ const Contact = () => {
       );
       // alert("Email sent successfully!");
       toast.success(`Email has sent successfuly...`);
+      setStatus(false);
       setEmail("");
       setMessage("");
       setName("");
@@ -135,7 +136,7 @@ const Contact = () => {
                     type="submit"
                     className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
                   >
-                    Send Enquiry
+                    {status ? "Sending" : "Send Inquiry"}
                   </button>
                 </div>
               </form>
