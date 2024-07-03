@@ -4,8 +4,8 @@ const Skills = () => {
   return (
     <div id="skills" data-aos="fade-up">
       <h3 className="text-center text-4xl pt-10 skills">Skills</h3>
-      <div className="p-20 flex skills">
-        <div className="flex-1 p-10">
+      <div className="mbskills-container flex skills">
+        <div className="mbskill flex-1">
           <div className="my-3">
             <p>HTML</p>
             <SkillLine width={80} />
@@ -36,7 +36,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="flex-1 p-10">
+        <div className=" mbskill flex-1 ">
           <div className="my-3">
             <p>Express js</p>
             <SkillLine width={75} />

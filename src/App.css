@@ -444,7 +444,20 @@ ul {
   display: flex;
   place-content: flex-start;
 } */
-
+.mbskills-container {
+  padding: 20%;
+}
+.mbskill {
+  padding: 10px;
+}
+@media screen and (max-width: 550px) {
+  .mbskill {
+    padding: 1px;
+  }
+  .mbskills-container {
+    padding: 10%;
+  }
+}
 .rounded-lg {
   /* class tailwind */
   border-radius: 10px;
@@ -541,6 +554,9 @@ ul {
 /* Services */
 .services {
   background-color: #0e0c0c;
+}
+.services-enclosed {
+  width: 100%;
 }
 
 /* Footer */
