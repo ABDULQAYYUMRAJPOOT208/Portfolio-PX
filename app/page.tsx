@@ -152,7 +152,7 @@ export default function Portfolio() {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "/CV.pdf"; // replace with your actual resume path
+    link.href = "/ABDUL_QAYYUM_CV.pdf"; // replace with your actual resume path
     link.download = "AbdulQayyum_Resume.pdf";
     document.body.appendChild(link);
     link.click();
