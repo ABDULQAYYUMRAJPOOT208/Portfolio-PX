@@ -457,6 +457,25 @@ export default function Portfolio() {
           <div className="space-y-8">
             {[
               {
+                title: "MERN STACK DEVELOPER",
+                company: "Webevis Technologies",
+                period: "JUNE to still Doing",
+                location: "On-site",
+                description:
+                  "I am working on large and scalable banking applications including crypto-trading and crypto-betting apps",
+                technologies: [
+                  "React js",
+                  "Node js",
+                  "Next js",
+                  "MongoDB",
+                  "Tailwind css",
+                  "TypeScript",
+                  "SQL",
+                  "AWS"
+                ],
+                link:"https://webevis.com/"
+              },
+              {
                 title: "Advanced Software Engineer",
                 company: "Walmart Global Tech",
                 period: "Over the period of August 2024 to September 2024",
